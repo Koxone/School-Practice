@@ -1,63 +1,197 @@
-# === Node ===
+# Dependencies
 node_modules/
-.env
-.env.*.local
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# === Logs ===
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# === OS ===
-.DS_Store
-Thumbs.db
-
-# === Build ===
-.next/
-out/
+# Production builds
 dist/
 build/
-.temp/
-.cache/
+out/
+.output/
+.vercel/
+.netlify/
+
+# Next.js
+.next/
+next-env.d.ts
+
+# Astro
+.astro/
+
+# Nuxt
+.nuxt/
+
+# Vite
 .vite/
 
-# === Astro ===
-astro.config.mjs
-public/fonts/*.ttf
-astro-types.d.ts
+# SvelteKit
+.svelte-kit/
 
-# === Tailwind ===
-tailwind.config.js
-tailwind.config.cjs
-tailwind.config.mjs
-postcss.config.js
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.production
+.env.staging
 
-# === Editor & IDE ===
+# Tailwind CSS
+src/output.css
+styles/output.css
+public/css/tailwind.css
+
+# IDE & Editors
 .vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 .idea/
 *.swp
+*.swo
+*~
 
-# === Test coverage ===
-coverage/
-*.lcov
-
-# === Misc ===
-*.local
-*.log
-*.pid
-*.seed
-*.tgz
-*.zip
-*.bak
-*.old
-
-# === Mac system files ===
+# OS generated files
+.DS_Store
+.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# Testing
+.coverage/
+coverage.xml
+.pytest_cache/
+.cache/
+
+# Storybook
+.storybook/
+storybook-static/
+
+# TypeScript
+*.tsbuildinfo
+
+# ESLint
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Parcel
+.parcel-cache/
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Firebase
+.firebase/
+firebase-debug.log
+firestore-debug.log
+
+# Supabase
+.supabase/
+
+# Capacitor
+ios/App/App/public
+ios/App/App/capacitor.config.json
+android/app/src/main/assets/public
+
+# Local database
+*.sqlite
+*.sqlite3
+*.db
+
+# Sentry
+.sentryclirc
+
+# Turborepo
+.turbo/
+
+# Package managers
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Vercel
+.vercel
+
+# Local Netlify folder
+.netlify/
+
+# Cloudflare
+wrangler.toml
+
+# Miscellaneous
+*.tgz
+*.tar.gz
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
